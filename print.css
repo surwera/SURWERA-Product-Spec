@@ -291,9 +291,139 @@ body {
 .contact-info strong,
 .company-info strong {
     color: var(--color-primary);
-    display: block;
-    margin-bottom: 1mm;
     font-weight: 700;
+}
+
+/* Feature Visuals (Shared Styles) */
+.feature-visual {
+    width: 100%;
+    height: 50mm;
+    /* Fixed height for symmetry */
+    border-radius: 2mm;
+    margin-bottom: 3mm;
+    box-shadow: 0 2mm 8mm rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+img.feature-visual {
+    object-fit: cover;
+}
+
+/* Platform Mockup */
+.platform-mockup {
+    background: #0f172a;
+    overflow: hidden;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #1e293b;
+}
+
+.pm-sidebar {
+    width: 25%;
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2mm;
+    display: flex;
+    flex-direction: column;
+}
+
+.pm-logo {
+    margin-bottom: 3mm;
+    padding-bottom: 2mm;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.pm-logo img {
+    height: 3mm;
+    opacity: 0.9;
+}
+
+.pm-nav-item {
+    color: #94a3b8;
+    font-size: 6pt;
+    padding: 1.5mm;
+    margin-bottom: 0.5mm;
+    border-radius: 1mm;
+    cursor: default;
+}
+
+.pm-nav-item.active {
+    background: rgba(0, 212, 255, 0.1);
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.pm-content {
+    flex: 1;
+    padding: 3mm;
+    display: flex;
+    flex-direction: column;
+}
+
+.pm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3mm;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1mm;
+}
+
+.pm-title {
+    color: #f8fafc;
+    font-size: 7pt;
+    font-weight: 600;
+}
+
+.pm-status {
+    color: #10b981;
+    font-size: 5pt;
+    display: flex;
+    align-items: center;
+    gap: 1mm;
+}
+
+.pm-status::before {
+    content: '';
+    display: block;
+    width: 1.5mm;
+    height: 1.5mm;
+    background: #10b981;
+    border-radius: 50%;
+}
+
+.pm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2mm;
+    flex: 1;
+}
+
+.pm-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1mm;
+    padding: 2mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pm-card-label {
+    color: #94a3b8;
+    font-size: 5pt;
+    text-transform: uppercase;
+}
+
+.pm-card-value {
+    color: #f8fafc;
+    font-size: 9pt;
+    font-weight: 700;
+}
+
+.pm-card-sub {
+    color: #38bdf8;
+    font-size: 5pt;
 }
 
 /* Print Media Query */
