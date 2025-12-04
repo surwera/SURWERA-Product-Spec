@@ -94,26 +94,51 @@
                             <div class="pm-title">Mission Control</div>
                             <div class="pm-status">Live</div>
                         </div>
-                        <div class="pm-grid">
-                            <div class="pm-card">
-                                <span class="pm-card-label">AIR-01 (Patrol)</span>
-                                <span class="pm-card-value">Flying</span>
-                                <span class="pm-card-sub">Batt: 78% • Alt: 45m</span>
+                        <div class="pm-body">
+                            <!-- Left Column: Status Cards -->
+                            <div class="pm-cards-col">
+                                <div class="pm-card highlight">
+                                    <span class="pm-card-label">AIR-01 (Patrol)</span>
+                                    <span class="pm-card-value">Flying</span>
+                                    <span class="pm-card-sub">Batt: 72% • Alt: 42m</span>
+                                </div>
+                                <div class="pm-card">
+                                    <span class="pm-card-label">AIR-02 (Docked)</span>
+                                    <span class="pm-card-value">Charging</span>
+                                    <span class="pm-card-sub">Status: 98% • ETA: 2m</span>
+                                </div>
                             </div>
-                            <div class="pm-card">
-                                <span class="pm-card-label">AIR-02 (Docked)</span>
-                                <span class="pm-card-value">Charging</span>
-                                <span class="pm-card-sub">Batt: 45% • ETA: 12m</span>
-                            </div>
-                            <div class="pm-card">
-                                <span class="pm-card-label">Environment</span>
-                                <span class="pm-card-value">Clear</span>
-                                <span class="pm-card-sub">Wind: 4m/s • Temp: 12°C</span>
-                            </div>
-                            <div class="pm-card">
-                                <span class="pm-card-label">System Health</span>
-                                <span class="pm-card-value">100%</span>
-                                <span class="pm-card-sub">All Systems Nominal</span>
+                            <!-- Right Column: Env Data + Map -->
+                            <div class="pm-right-col">
+                                <!-- Environment Bar -->
+                                <div class="pm-env-bar">
+                                    <div class="pm-env-group">
+                                        <span class="pm-env-label">Temp</span>
+                                        <span class="pm-env-value">12°C</span>
+                                    </div>
+                                    <div class="pm-env-group">
+                                        <span class="pm-env-label">Wind</span>
+                                        <span class="pm-env-value">4m/s</span>
+                                    </div>
+                                    <div class="pm-env-group">
+                                        <span class="pm-env-label">Hum</span>
+                                        <span class="pm-env-value">45%</span>
+                                    </div>
+                                </div>
+                                <!-- Map View -->
+                                <div class="pm-map-view">
+                                    <!-- AIR-01 Flying -->
+                                    <div class="pm-drone-marker" style="top: 35%; left: 55%;"></div>
+                                    <!-- AIR-02 Docked -->
+                                    <div class="pm-drone-marker docked" style="bottom: 15%; left: 15%;"></div>
+                                    <!-- Map Controls Mockup -->
+                                    <div
+                                        style="position: absolute; top: 2mm; right: 2mm; background: rgba(15, 23, 42, 0.8); padding: 1mm; border-radius: 1mm; border: 1px solid #334155;">
+                                        <div
+                                            style="width: 2mm; height: 2mm; border: 1px solid #94a3b8; border-radius: 0.5mm;">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

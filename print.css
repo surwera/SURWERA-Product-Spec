@@ -309,56 +309,61 @@ img.feature-visual {
     object-fit: cover;
 }
 
-/* Platform Mockup */
+/* Platform Mockup - Modern & Real */
 .platform-mockup {
     background: #0f172a;
+    /* Slate 900 */
     overflow: hidden;
     display: flex;
     font-family: 'Inter', sans-serif;
-    border: 1px solid #1e293b;
+    border: 1px solid #334155;
+    /* Slate 700 */
 }
 
 .pm-sidebar {
-    width: 25%;
-    background: rgba(0, 0, 0, 0.3);
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 2mm;
+    width: 22%;
+    background: #1e293b;
+    /* Slate 800 */
+    border-right: 1px solid #334155;
+    padding: 3mm 2mm;
     display: flex;
     flex-direction: column;
+    gap: 1mm;
 }
 
 .pm-logo {
-    margin-bottom: 3mm;
-    padding-bottom: 2mm;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
+    margin-bottom: 4mm;
+    padding-left: 1mm;
 }
 
 .pm-logo img {
-    height: 3mm;
+    height: 2.5mm;
     opacity: 0.9;
 }
 
 .pm-nav-item {
     color: #94a3b8;
-    font-size: 6pt;
-    padding: 1.5mm;
-    margin-bottom: 0.5mm;
+    /* Slate 400 */
+    font-size: 4.5pt;
+    padding: 1.5mm 2mm;
     border-radius: 1mm;
-    cursor: default;
+    font-weight: 500;
 }
 
 .pm-nav-item.active {
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(56, 189, 248, 0.1);
+    /* Sky 400 with opacity */
     color: #38bdf8;
+    /* Sky 400 */
     font-weight: 600;
 }
 
 .pm-content {
     flex: 1;
-    padding: 3mm;
+    padding: 3mm 4mm;
     display: flex;
     flex-direction: column;
+    background: #0f172a;
 }
 
 .pm-header {
@@ -366,64 +371,200 @@ img.feature-visual {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3mm;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 1mm;
+    flex-shrink: 0;
 }
 
 .pm-title {
-    color: #f8fafc;
-    font-size: 7pt;
+    color: #f8fafc !important;
+    font-size: 8pt;
     font-weight: 600;
+    letter-spacing: -0.01em;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
 }
 
 .pm-status {
-    color: #10b981;
-    font-size: 5pt;
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981 !important;
+    font-size: 4pt;
+    padding: 0.5mm 1.5mm;
+    border-radius: 2mm;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pm-body {
     display: flex;
-    align-items: center;
-    gap: 1mm;
-}
-
-.pm-status::before {
-    content: '';
-    display: block;
-    width: 1.5mm;
-    height: 1.5mm;
-    background: #10b981;
-    border-radius: 50%;
-}
-
-.pm-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2mm;
+    gap: 3mm;
     flex: 1;
+    overflow: hidden;
 }
+
+.pm-cards-col {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    gap: 2mm;
+}
+
+
 
 .pm-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 1mm;
+    background: #1e293b;
+    /* Slate 800 */
+    border: 1px solid #334155;
+    border-radius: 1.5mm;
     padding: 2mm;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+
+.pm-card.highlight {
+    background: rgba(56, 189, 248, 0.05);
+    border-color: rgba(56, 189, 248, 0.3);
 }
 
 .pm-card-label {
-    color: #94a3b8;
-    font-size: 5pt;
+    color: #64748b;
+    /* Slate 500 */
+    font-size: 3.5pt;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1mm;
+    font-weight: 600;
 }
 
 .pm-card-value {
     color: #f8fafc;
-    font-size: 9pt;
-    font-weight: 700;
+    font-size: 7pt;
+    font-weight: 600;
+    margin-bottom: 0.5mm;
 }
 
 .pm-card-sub {
     color: #38bdf8;
-    font-size: 5pt;
+    font-size: 3.5pt;
+    font-family: 'JetBrains Mono', monospace;
+    /* Tech feel */
+}
+
+.pm-right-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5mm;
+}
+
+.pm-env-bar {
+    display: flex;
+    gap: 1.5mm;
+    /* Remove container styling */
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.pm-env-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Stack label and value vertically */
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 41, 59, 0.8);
+    /* Darker background for boxes */
+    border: 1px solid #334155;
+    border-radius: 1mm;
+    padding: 1.5mm 1mm;
+}
+
+.pm-env-value {
+    color: #f8fafc;
+    font-size: 7pt;
+    /* Larger value */
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.pm-env-label {
+    color: #94a3b8;
+    font-size: 3.5pt;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.5mm;
+    /* Space between label and value */
+}
+
+.pm-map-view {
+    flex: 1;
+    background-image: url('content/final_map_polygon_v2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5mm;
+    position: relative;
+    border: 1px solid #334155;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Environment Data Grid */
+.pm-env-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1mm;
+    margin-top: 1.5mm;
+    flex: 1;
+}
+
+.pm-env-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1mm;
+    padding: 1mm 0.5mm;
+}
+
+.pm-env-val {
+    color: #fff;
+    font-size: 6.5pt;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.pm-env-lbl {
+    color: #cbd5e1;
+    font-size: 3.5pt;
+    text-transform: uppercase;
+    margin-top: 0.5mm;
+    font-weight: 600;
+}
+
+/* Map overlay elements */
+.pm-drone-marker {
+    position: absolute;
+    width: 2.5mm;
+    height: 2.5mm;
+    background: #38bdf8;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 4mm rgba(56, 189, 248, 0.6);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.pm-drone-marker.docked {
+    background: #64748b;
+    border-color: #94a3b8;
+    box-shadow: none;
 }
 
 /* Print Media Query */
