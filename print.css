@@ -462,47 +462,37 @@ img.feature-visual {
 
 .pm-env-bar {
     display: flex;
-    gap: 1.5mm;
-    /* Remove container styling */
-    background: transparent;
-    border: none;
-    padding: 0;
+    justify-content: space-between;
+    background: rgba(30, 41, 59, 0.5);
+    /* Semi-transparent Slate 800 */
+    border: 1px solid #334155;
+    border-radius: 1mm;
+    padding: 1.5mm 3mm;
+    align-items: center;
 }
 
 .pm-env-group {
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    /* Stack label and value vertically */
+    gap: 2mm;
     align-items: center;
-    justify-content: center;
-    background: rgba(30, 41, 59, 0.8);
-    /* Darker background for boxes */
-    border: 1px solid #334155;
-    border-radius: 1mm;
-    padding: 1.5mm 1mm;
 }
 
 .pm-env-value {
     color: #f8fafc;
-    font-size: 7pt;
-    /* Larger value */
+    font-size: 6pt;
     font-weight: 700;
-    line-height: 1.1;
 }
 
 .pm-env-label {
     color: #94a3b8;
-    font-size: 3.5pt;
+    font-size: 4pt;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 0.5mm;
-    /* Space between label and value */
 }
 
 .pm-map-view {
     flex: 1;
-    background-image: url('content/final_map_polygon_v2.jpg');
+    background-image: url('content/final_map_polygon_v2.png');
     background-size: cover;
     background-position: center;
     border-radius: 1.5mm;
@@ -548,24 +538,6 @@ img.feature-visual {
     font-weight: 600;
 }
 
-/* Map overlay elements */
-.pm-drone-marker {
-    position: absolute;
-    width: 2.5mm;
-    height: 2.5mm;
-    background: #38bdf8;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 4mm rgba(56, 189, 248, 0.6);
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-.pm-drone-marker.docked {
-    background: #64748b;
-    border-color: #94a3b8;
-    box-shadow: none;
-}
 
 /* Print Media Query */
 @media print {
