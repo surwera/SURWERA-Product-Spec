@@ -1,0 +1,317 @@
+/* Print-optimized styles for One Pager */
+
+:root {
+    --color-primary: #000000;
+    --color-secondary: #333333;
+    --color-accent: #0066cc;
+    --color-light-gray: #f5f5f5;
+    --color-border: #e0e0e0;
+
+    --font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background: #ffffff;
+    color: var(--color-primary);
+    font-size: 12px;
+    /* Base size for print */
+    line-height: 1.4;
+}
+
+.page {
+    width: 210mm;
+    /* A4 width */
+    height: 297mm;
+    /* A4 height */
+    padding: 15mm;
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    /* Prevent spillover */
+}
+
+
+.doc-meta {
+    font-size: 9pt;
+    color: var(--color-secondary);
+    margin-top: 2mm;
+}
+
+/* Header - Updated to match new HTML structure */
+.doc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 4mm;
+    margin-bottom: 8mm;
+}
+
+.logo-section img {
+    height: 10mm;
+    width: auto;
+}
+
+.doc-header .doc-meta {
+    text-align: right;
+    font-size: 9pt;
+    color: var(--color-secondary);
+    margin-top: 0;
+}
+
+/* Legacy header styles (keep for compatibility) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 10mm;
+    margin-bottom: 10mm;
+}
+
+.logo {
+    height: 12mm;
+    width: auto;
+}
+
+.header-info {
+    text-align: right;
+}
+
+.doc-title {
+    font-size: 14pt;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8mm;
+    gap: 8mm;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 22pt;
+    line-height: 1.1;
+    margin: 0 0 4mm 0;
+    color: var(--color-primary);
+    font-weight: 800;
+}
+
+.hero-subtitle {
+    font-size: 10pt;
+    color: var(--color-secondary);
+    margin-bottom: 6mm;
+    line-height: 1.5;
+}
+
+.key-stats {
+    display: flex;
+    gap: 6mm;
+}
+
+.stat {
+    border-left: 3px solid var(--color-accent);
+    padding-left: 3mm;
+}
+
+.stat-value {
+    display: block;
+    font-size: 15pt;
+    font-weight: 800;
+    color: var(--color-accent);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    display: block;
+    margin-top: 1mm;
+}
+
+.hero-image-container {
+    flex: 0 0 60mm;
+    width: 60mm;
+    height: 60mm;
+    border-radius: 3mm;
+    overflow: hidden;
+    box-shadow: 0 2mm 8mm rgba(0, 0, 0, 0.15);
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Value Props */
+.value-prop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4mm;
+    margin-bottom: 8mm;
+    background: var(--color-light-gray);
+    padding: 4mm;
+    border-radius: 2mm;
+}
+
+.prop-card h3 {
+    font-size: 10pt;
+    margin: 0 0 2mm 0;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.prop-card p {
+    font-size: 8.5pt;
+    margin: 0;
+    color: var(--color-secondary);
+    line-height: 1.4;
+}
+
+.prop-card p strong {
+    color: var(--color-primary);
+    display: block;
+    margin-bottom: 1mm;
+}
+
+/* Visual Features Section */
+.visual-features {
+    margin-bottom: 8mm;
+}
+
+.feature-box img {
+    box-shadow: 0 1mm 4mm rgba(0, 0, 0, 0.1);
+}
+
+/* Specs */
+.specs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8mm;
+    margin-bottom: 8mm;
+}
+
+.section-title {
+    font-size: 11pt;
+    font-weight: 700;
+    border-bottom: 1.5px solid var(--color-accent);
+    padding-bottom: 2mm;
+    margin-bottom: 3mm;
+    color: var(--color-primary);
+}
+
+.subsection-title {
+    font-size: 9.5pt;
+    margin-top: 5mm;
+    margin-bottom: 2mm;
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+}
+
+.spec-table th {
+    text-align: left;
+    padding: 1.2mm 0;
+    color: var(--color-secondary);
+    width: 42%;
+    font-weight: 500;
+}
+
+.spec-table td {
+    text-align: right;
+    padding: 1.2mm 0;
+    font-weight: 600;
+    border-bottom: 0.5px solid var(--color-border);
+    color: var(--color-primary);
+}
+
+.spec-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Compliance & Footer */
+.compliance-footer {
+    border-top: 2px solid var(--color-primary);
+    padding-top: 4mm;
+    margin-top: auto;
+}
+
+.compliance-badges {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 6mm;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: var(--color-primary);
+    color: white;
+    padding: 1.5mm 3mm;
+    border-radius: 1mm;
+    font-size: 7.5pt;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8.5pt;
+    color: var(--color-secondary);
+    line-height: 1.5;
+}
+
+.contact-info strong,
+.company-info strong {
+    color: var(--color-primary);
+    display: block;
+    margin-bottom: 1mm;
+    font-weight: 700;
+}
+
+/* Print Media Query */
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .page {
+        margin: 0;
+        width: 210mm;
+        height: 297mm;
+        page-break-after: always;
+    }
+}

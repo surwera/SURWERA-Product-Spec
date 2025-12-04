@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURWERA System - Enterprise Product Specification</title>
+    <meta name="description"
+        content="SURWERA System v6.0 - Autonomous 24/7 aerial security with dual-node drone-in-a-box architecture. STS-02 compliant, cloud-native, and AI-powered.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <img src="content/construction-site-night.png" alt="Construction site at night" class="hero-image">
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <img src="content/Surwera_logo_NEG.png" alt="SURWERA Logo" class="logo">
+                <div class="nav-links">
+                    <a href="#overview">Overview</a>
+                    <a href="#hardware">Hardware</a>
+                    <a href="#platform">Platform</a>
+                    <a href="#compliance">Compliance</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <div class="badge">Enterprise v6.0 • STS-02 Compliant</div>
+                <h1 class="hero-title">The New Era of<br>Autonomous Security</h1>
+                <p class="hero-subtitle">True 24/7 aerial presence with AI-powered autonomous security. Zero downtime,
+                    instant response, complete control.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">0%</div>
+                        <div class="stat-label">Downtime</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">&lt;1min</div>
+                        <div class="stat-label">Response Time</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">24/7</div>
+                        <div class="stat-label">Aerial Coverage</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">1km</div>
+                        <div class="stat-label">Max Range (STS-02)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- Executive Summary -->
+    <section id="overview" class="section executive-summary">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Executive Summary</span>
+                <h2>Continuous Aerial Presence</h2>
+                <p class="section-subtitle">Unlike legacy systems that react to ground sensors, SURWERA maintains a
+                    constant "Eye in the Sky"</p>
+            </div>
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <div class="card-icon">🔄</div>
+                    <h3>Hot-Swap Architecture</h3>
+                    <p>Dual-node system with relay logic ensures one drone is always airborne. As the active unit
+                        depletes its battery, the secondary launches instantly—achieving 100% temporal coverage with
+                        zero downtime.</p>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon">🤖</div>
+                    <h3>AI-Powered Response</h3>
+                    <p>Onboard AI Agents autonomously execute interception flight paths, actively approaching intruders
+                        to initiate vocal confrontation. Response time under 1 minute from detection to engagement.</p>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon">☁️</div>
+                    <h3>Cloud-Native Control</h3>
+                    <p>AWS Kubernetes deployment with full code sovereignty. Seamless SOC integration, encrypted
+                        evidence storage, and automated reporting with complete data residency control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operational Phases -->
+    <section class="section operational-phases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Regulatory Compliance</span>
+                <h2>Operational Phasing & Regulatory Envelope</h2>
+            </div>
+            <div class="phases-container">
+                <div class="phase-card phase-active">
+                    <div class="phase-number">Phase 1</div>
+                    <h3>Initial Deployment (STS-02)</h3>
+                    <div class="phase-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Regulatory Standard</span>
+                            <span class="detail-value">EASA STS-02 (BVLOS over controlled ground area)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Max Range</span>
+                            <span class="detail-value">Up to 1 km radius</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Max Height</span>
+                            <span class="detail-value">120 meters (400 ft) AGL</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Drone Classification</span>
+                            <span class="detail-value">C6 Class Compliant</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Ground Risk</span>
+                            <span class="detail-value">Controlled Ground Area (fenced/secured perimeter)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="phase-card phase-future">
+                    <div class="phase-number">Phase 2</div>
+                    <h3>Operations Center (LUC)</h3>
+                    <div class="phase-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Regulatory Goal</span>
+                            <span class="detail-value">Light UAS Operator Certificate (LUC)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Operational Upgrade</span>
+                            <span class="detail-value">Full self-authorization for complex BVLOS</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Extended Range</span>
+                            <span class="detail-value">10 km+ radius with multi-site mesh networks</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Airspace Observers</span>
+                            <span class="detail-value">Not required (autonomous authorization)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware: Air Segment -->
+    <section id="hardware" class="section hardware-air">
+        <div class="container-wide">
+            <div class="section-header">
+                <span class="section-tag">Air Segment</span>
+                <h2>SURWERA Air</h2>
+                <p class="section-subtitle">DJI Matrice 4TD Custom Configuration</p>
+            </div>
+            <div class="hardware-showcase">
+                <div class="hardware-image">
+                    <img src="content/drone-confrontation-no-sound.jpg" alt="SURWERA Air Drone">
+                    <div class="image-badge">IP55 Certified</div>
+                </div>
+                <div class="hardware-specs">
+                    <div class="spec-category">
+                        <h3>Flight Performance</h3>
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Max Flight Time</span>
+                                <span class="spec-value">50 Minutes</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Max Speed</span>
+                                <span class="spec-value">21 m/s (75 km/h)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Wind Resistance</span>
+                                <span class="spec-value">12 m/s Operational</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Ingress Protection</span>
+                                <span class="spec-value">IP55 (Rain, Dust, Snow)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Transmission</span>
+                                <span class="spec-value">O4 Enterprise (AES-256)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Dimensions (Unfolded)</span>
+                                <span class="spec-value">570×583×465 mm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optical Payload -->
+            <div class="payload-section">
+                <h3>Triple-Sensor Optical Array</h3>
+                <div class="sensor-grid">
+                    <div class="sensor-card">
+                        <div class="sensor-icon">📷</div>
+                        <h4>Wide Camera</h4>
+                        <div class="sensor-specs">
+                            <p><strong>48 MP</strong> • 1/1.32" CMOS</p>
+                            <p>24mm eq. • f/1.7</p>
+                        </div>
+                        <p class="sensor-function"><strong>Situational Awareness</strong><br>Superior low-light
+                            performance for night operations</p>
+                    </div>
+                    <div class="sensor-card">
+                        <div class="sensor-icon">🔍</div>
+                        <h4>Tele Camera</h4>
+                        <div class="sensor-specs">
+                            <p><strong>48 MP</strong> • 1/1.32" CMOS</p>
+                            <p><strong>56x Hybrid Zoom</strong></p>
+                        </div>
+                        <p class="sensor-function"><strong>Identification</strong><br>Read license plates from 100m+
+                            standoff distance</p>
+                    </div>
+                    <div class="sensor-card">
+                        <div class="sensor-icon">🌡️</div>
+                        <h4>Thermal Camera</h4>
+                        <div class="sensor-specs">
+                            <p><strong>640×512</strong> @ 30Hz</p>
+                            <p>Upscaled 1280×1024</p>
+                        </div>
+                        <p class="sensor-function"><strong>Detection</strong><br>Detect body heat in total darkness and
+                            smoke</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Deterrence -->
+            <div class="deterrence-section">
+                <h3>Active Deterrence Payload</h3>
+                <div class="deterrence-grid">
+                    <div class="deterrence-item">
+                        <div class="deterrence-icon">🔊</div>
+                        <h4>Loudspeaker</h4>
+                        <p><strong>114 dB @ 1 meter</strong></p>
+                        <p>Speech intelligibility up to 300m</p>
+                    </div>
+                    <div class="deterrence-item">
+                        <div class="deterrence-icon">💡</div>
+                        <h4>Lighting System</h4>
+                        <p><strong>High-Intensity LED</strong></p>
+                        <p>Spotlight + Strobe Beacon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Decision Making & Confrontation -->
+    <section class="section ai-confrontation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Autonomous Logic</span>
+                <h2>AI Decision Making & Escalation</h2>
+                <p class="section-subtitle">The OODA Loop: Observe, Orient, Decide, Act</p>
+            </div>
+
+            <div class="feature-showcase">
+                <div class="feature-text">
+                    <h3>Intelligent Threat Assessment</h3>
+                    <p>The onboard AI continuously analyzes the video feed to classify objects and assess threats. It
+                        distinguishes between authorized personnel, vehicles, and potential intruders with high
+                        accuracy.</p>
+                    <ul class="feature-list-bullets">
+                        <li>Real-time object classification</li>
+                        <li>Behavioral analysis</li>
+                        <li>Automated threat leveling</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <img src="content/ai_decision_hud.png" alt="AI Decision HUD" class="rounded-visual">
+                </div>
+            </div>
+
+            <div class="feature-showcase reverse">
+                <div class="feature-text">
+                    <h3>Active Verbal Confrontation</h3>
+                    <p>Upon confirming a threat, the system autonomously initiates an interception course. It maintains
+                        a safe standoff distance while using the spotlight and loudspeaker to issue verbal warnings,
+                        effectively de-escalating the situation before security teams arrive.</p>
+                    <ul class="feature-list-bullets">
+                        <li>Autonomous interception flight path</li>
+                        <li>Dynamic spotlight tracking</li>
+                        <li>Pre-recorded or live voice commands</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <img src="content/verbal_confrontation.png" alt="Verbal Confrontation" class="rounded-visual">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data & Analytics -->
+    <section class="section analytics">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Data Intelligence</span>
+                <h2>Logging & Analysis</h2>
+                <p class="section-subtitle">Comprehensive insights for security optimization</p>
+            </div>
+
+            <div class="analytics-showcase">
+                <!-- Interactive Dashboard Mockup -->
+                <div class="dashboard-mockup">
+                    <div class="dashboard-sidebar">
+                        <div class="sidebar-logo">
+                            <img src="content/Surwera_logo_NEG.png" alt="Surwera">
+                        </div>
+                        <nav class="sidebar-nav">
+                            <button class="nav-item active" data-tab="mission-control">
+                                <span class="nav-icon">🌐</span>
+                                <span class="nav-label">Mission Control</span>
+                            </button>
+                            <button class="nav-item" data-tab="live-feed">
+                                <span class="nav-icon">📹</span>
+                                <span class="nav-label">Live Feed</span>
+                            </button>
+                            <button class="nav-item" data-tab="analytics">
+                                <span class="nav-icon">📊</span>
+                                <span class="nav-label">Analytics</span>
+                            </button>
+                            <button class="nav-item" data-tab="settings">
+                                <span class="nav-icon">⚙️</span>
+                                <span class="nav-label">Settings</span>
+                            </button>
+                        </nav>
+                        <div class="sidebar-footer">
+                            <div class="status-indicator online">
+                                <span class="status-dot"></span>
+                                System Online
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-main">
+                        <header class="dashboard-header">
+                            <h3 class="view-title">Mission Control</h3>
+                            <div class="header-actions">
+                                <span class="time-display">12:42 PM</span>
+                                <div class="user-profile">CA</div>
+                            </div>
+                        </header>
+
+                        <div class="dashboard-content">
+                            <!-- Mission Control View -->
+                            <div class="view-panel active" id="mission-control">
+                                <div class="map-container">
+                                    <div class="map-grid"></div>
+                                    <!-- Drone Marker 1 -->
+                                    <div class="drone-marker" style="top: 40%; left: 30%;">
+                                        <div class="drone-icon">🚁</div>
+                                        <div class="drone-label">AIR-01 (Patrol)</div>
+                                        <div class="drone-pulse"></div>
+                                    </div>
+                                    <!-- Drone Marker 2 -->
+                                    <div class="drone-marker" style="top: 60%; left: 70%;">
+                                        <div class="drone-icon">🚁</div>
+                                        <div class="drone-label">AIR-02 (Docked)</div>
+                                    </div>
+                                    <!-- Incident Marker -->
+                                    <div class="incident-marker" style="top: 35%; left: 35%;">
+                                        <div class="incident-icon">⚠️</div>
+                                        <div class="incident-label">Motion Detected</div>
+                                    </div>
+                                </div>
+                                <div class="mission-stats">
+                                    <div class="m-stat">
+                                        <span class="ms-label">Active Drones</span>
+                                        <span class="ms-value">1/2</span>
+                                    </div>
+                                    <div class="m-stat">
+                                        <span class="ms-label">Next Patrol</span>
+                                        <span class="ms-value">00:15:00</span>
+                                    </div>
+                                    <div class="m-stat">
+                                        <span class="ms-label">Weather</span>
+                                        <span class="ms-value">Clear, 4m/s</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Live Feed View -->
+                            <div class="view-panel" id="live-feed">
+                                <div class="feed-grid">
+                                    <div class="feed-item">
+                                        <div class="feed-placeholder">
+                                            <span>AIR-01: Optical</span>
+                                            <div class="live-badge">LIVE</div>
+                                        </div>
+                                    </div>
+                                    <div class="feed-item">
+                                        <div class="feed-placeholder">
+                                            <span>AIR-01: Thermal</span>
+                                            <div class="live-badge">LIVE</div>
+                                        </div>
+                                    </div>
+                                    <div class="feed-item">
+                                        <div class="feed-placeholder">
+                                            <span>Dock Cam 01</span>
+                                            <div class="live-badge">LIVE</div>
+                                        </div>
+                                    </div>
+                                    <div class="feed-item">
+                                        <div class="feed-placeholder">
+                                            <span>Dock Cam 02</span>
+                                            <div class="live-badge">LIVE</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Analytics View -->
+                            <div class="view-panel" id="analytics">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Event</th>
+                                            <th>Drone</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>12:40:05</td>
+                                            <td>Patrol Started</td>
+                                            <td>AIR-01</td>
+                                            <td><span class="status-tag success">Normal</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12:35:12</td>
+                                            <td>Motion Detected</td>
+                                            <td>Sensor-04</td>
+                                            <td><span class="status-tag warning">Investigating</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12:30:00</td>
+                                            <td>Battery Swap</td>
+                                            <td>AIR-02</td>
+                                            <td><span class="status-tag success">Complete</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12:15:00</td>
+                                            <td>System Check</td>
+                                            <td>Core</td>
+                                            <td><span class="status-tag success">Pass</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Settings View -->
+                            <div class="view-panel" id="settings">
+                                <div class="settings-placeholder">
+                                    <p>System Configuration Access Restricted</p>
+                                    <button class="btn-small">Request Admin Access</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="analytics-features">
+                    <div class="analytics-card">
+                        <h4>Flight Logs</h4>
+                        <p>Detailed telemetry and mission data for every flight, ensuring full auditability.</p>
+                    </div>
+                    <div class="analytics-card">
+                        <h4>Incident Heatmaps</h4>
+                        <p>Visualize high-activity areas to optimize patrol routes and sensor placement.</p>
+                    </div>
+                    <div class="analytics-card">
+                        <h4>System Health</h4>
+                        <p>Predictive maintenance alerts for batteries, motors, and docking stations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware: Ground Segment -->
+    <section class="section hardware-ground">
+        <div class="container-wide">
+            <div class="section-header">
+                <span class="section-tag">Ground Segment</span>
+                <h2>SURWERA Base</h2>
+                <p class="section-subtitle">DJI Dock 3 with Edge AI Computing</p>
+            </div>
+            <div class="ground-showcase">
+                <div class="ground-image">
+                    <img src="content/dji-dock-3.png" alt="SURWERA Base Station">
+                </div>
+                <div class="ground-specs">
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Dimensions</span>
+                            <span class="spec-value">570×583×465 mm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Weight</span>
+                            <span class="spec-value">34 kg</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Environmental Range</span>
+                            <span class="spec-value">-25°C to +50°C</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Climate Control</span>
+                            <span class="spec-value">TEC Air Conditioning & Defrosting</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Backup Power</span>
+                            <span class="spec-value">&gt;5 Hours (Grid Outage)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Edge Computing</span>
+                            <span class="spec-value">Local RTK Processing & Landing Logic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Specifications -->
+    <section id="platform" class="section platform-specs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Software Platform</span>
+                <h2>SURWERA Core</h2>
+                <p class="section-subtitle">Cloud-Native Command & Control on AWS Kubernetes</p>
+            </div>
+
+            <div class="platform-image-container">
+                <img src="content/guard-in-platform-online.png" alt="SURWERA Platform Interface"
+                    class="platform-screenshot">
+            </div>
+
+            <div class="platform-features">
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Autonomous AI Agents</h3>
+                    </div>
+                    <p>Advanced behavioral logic that autonomously decides approach vectors, confrontation distances,
+                        and escalation levels. The system cycles through observation, verbal warning, and strobe & siren
+                        modes based on threat assessment.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">✓ Autonomous approach vector calculation</div>
+                        <div class="feature-item">✓ Safe standoff distance maintenance</div>
+                        <div class="feature-item">✓ Dynamic escalation protocols</div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Flight Control Modes</h3>
+                    </div>
+                    <div class="control-modes">
+                        <div class="mode-item">
+                            <h4>Always-On Patrol (Auto)</h4>
+                            <p>24/7 autonomous scheduling with auto-hot-swap logic for continuous coverage</p>
+                        </div>
+                        <div class="mode-item">
+                            <h4>Manual Override (Telepresence)</h4>
+                            <p>Instant operator control via 4G/5G/Starlink with &lt;200ms latency</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon">🔗</div>
+                        <h3>SOC Integration & Reporting</h3>
+                    </div>
+                    <div class="feature-list">
+                        <div class="feature-item">✓ Direct API bridge to VMS and Alarm Central</div>
+                        <div class="feature-item">✓ Verified alarms with video + location data</div>
+                        <div class="feature-item">✓ AES-256 encrypted evidence locker</div>
+                        <div class="feature-item">✓ Automated PDF reports (Timeline, Map, Snapshots)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connectivity & Installation -->
+    <section class="section connectivity">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Infrastructure</span>
+                <h2>Connectivity & Installation</h2>
+            </div>
+            <div class="connectivity-grid">
+                <div class="connectivity-card">
+                    <h4>Backhaul Options</h4>
+                    <div class="option-list">
+                        <span class="option-badge">Starlink</span>
+                        <span class="option-badge">Fiber</span>
+                        <span class="option-badge">4G</span>
+                        <span class="option-badge">5G Bonding</span>
+                    </div>
+                </div>
+                <div class="connectivity-card">
+                    <h4>Power Requirements</h4>
+                    <p><strong>100-240V AC</strong> • Max 1000W</p>
+                </div>
+                <div class="connectivity-card">
+                    <h4>Site Requirements</h4>
+                    <p>1m × 1m flat surface with clear sky view</p>
+                </div>
+                <div class="connectivity-card">
+                    <h4>Data Consumption</h4>
+                    <p>5-8 GB/month (Standard)<br>5 Mbps uplink (Live Streaming)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance & Maintenance -->
+    <section id="compliance" class="section compliance">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Compliance & Service</span>
+                <h2>Regulatory Compliance & Maintenance</h2>
+            </div>
+            <div class="compliance-grid">
+                <div class="compliance-section">
+                    <h3>Regulatory Compliance</h3>
+                    <div class="compliance-list">
+                        <div class="compliance-item">
+                            <div class="compliance-badge">EASA</div>
+                            <div>
+                                <h4>C6 Class Certified</h4>
+                                <p>Optimized for STS-02 operations</p>
+                            </div>
+                        </div>
+                        <div class="compliance-item">
+                            <div class="compliance-badge">GDPR</div>
+                            <div>
+                                <h4>Privacy Masking</h4>
+                                <p>AI-driven face/license plate masking (configurable)</p>
+                            </div>
+                        </div>
+                        <div class="compliance-item">
+                            <div class="compliance-badge">EU</div>
+                            <div>
+                                <h4>Data Residency</h4>
+                                <p>EU Sovereign Cloud (AWS Frankfurt/Stockholm)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="compliance-section">
+                    <h3>Maintenance Cycle</h3>
+                    <div class="maintenance-list">
+                        <div class="maintenance-item">
+                            <span class="maintenance-label">Propellers</span>
+                            <span class="maintenance-value">Inspection every 100h • Replace every 300h</span>
+                        </div>
+                        <div class="maintenance-item">
+                            <span class="maintenance-label">Dock Air Intake</span>
+                            <span class="maintenance-value">Filter cleaning every 3-6 months</span>
+                        </div>
+                        <div class="maintenance-item">
+                            <span class="maintenance-label">MTBF</span>
+                            <span class="maintenance-value">&gt;1000 Flight Hours</span>
+                        </div>
+                        <div class="maintenance-item">
+                            <span class="maintenance-label">Warranty</span>
+                            <span class="maintenance-value">Enterprise Shield Basic (1 Year) • 24h replacement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-header">
+                    <h2>Protecting Critical Infrastructure</h2>
+                    <p>Europe's infrastructure requires the highest level of protection to ensure national security and
+                        economic stability.</p>
+                </div>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <h4>Casper Augustsson</h4>
+                        <a href="tel:+46723249164" class="contact-link">072 324 91 64</a>
+                        <a href="mailto:casper@surwera.com" class="contact-link">casper@surwera.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <h4>Koray Amico Kulbay</h4>
+                        <a href="tel:+46734201609" class="contact-link">073 420 16 09</a>
+                        <a href="mailto:koray@surwera.com" class="contact-link">koray@surwera.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="content/Surwera_logo_NEG.png" alt="SURWERA Logo">
+                </div>
+                <div class="footer-info">
+                    <p><strong>SURWERA System</strong> • Enterprise v6.0 (STS-02 Compliant)</p>
+                    <p>December 2025 • Surwera AB</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:info@surwera.com">info@surwera.com</a>
+                    <a href="https://surwera.com" target="_blank">surwera.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Surwera. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
